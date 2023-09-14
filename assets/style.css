@@ -601,7 +601,8 @@
   .cta { background-color: var(--vermelho-brilhante); }
   
   .cta-banner { margin-block-end: 50px; }
-  
+
+ 
   .cta .section-subtitle { text-transform: capitalize; }
   
   .cta .section-title {
@@ -1033,6 +1034,13 @@ textarea::placeholder{
   /**
    * responsive 768px 
    */
+   @media (max-width: 767.5px) {
+   .cta-banner img{
+    border-bottom: 5px solid var(--white);
+    
+  }
+
+}
   
   @media (min-width: 768px) {
   
@@ -1132,7 +1140,7 @@ textarea::placeholder{
   
     .cta-content { padding-block: 60px; }
   
-  
+   
   
     /**
      * BLOG

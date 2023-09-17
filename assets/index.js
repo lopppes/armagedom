@@ -66,3 +66,23 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// Obtém o botão e o popup
+var openPopupButton = document.getElementById("openPopup");
+var popup = document.getElementById("popupContent");
+
+// Quando o botão "Ver Mais" for clicado, exibe o popup
+openPopupButton.addEventListener("click", function () {
+    if (popup.style.display === "block") {
+        popup.style.display = "none";
+    } else {
+        popup.style.display = "block";
+    }
+});
+
+// Fecha o popup quando o usuário clicar fora dele
+window.addEventListener("click", function (event) {
+    if (!event.target.matches('.btn') && !event.target.matches('.popup')) {
+        popup.style.display = "none";
+    }
+});

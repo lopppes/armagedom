@@ -376,8 +376,42 @@
     font-weight: var(--fw-600);
     padding: 15px;
   }
+  .popup-container {
+    position: relative;
+    display: inline-block;
+   
+}
 
-  
+/* Estilize o popup (inicialmente oculto) */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.popup a{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--vermelho-brilhante);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.popup a:hover{
+  color: var(--black);
+ 
+}
+.popup a:nth-child(2){
+  border-top: 2px solid #dc2c2c;
+  padding-top: 5px;
+}
+
+
   /*-----------------------------------*\
     #HERO
   \*-----------------------------------*/

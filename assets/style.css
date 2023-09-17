@@ -395,14 +395,14 @@
 }
 
 .hero-banner img {
-  width: 1000px; /* Largura original */
+  width: 700px; /* Largura original */
   position: absolute;
   top: 0;
-  right: -250px; /* Posiciona a imagem no canto superior direito */
+  right: -150px; /* Posiciona a imagem no canto superior direito */
   transition: width 0.3s ease; /* Adiciona uma transição suave na largura */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .hero-banner {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -411,8 +411,8 @@
   }
   
   .hero-banner img {
-    width: 650px;
-    right: -100px;
+    width: 450px;
+    right: -65px;
   }
 }
 
@@ -503,6 +503,21 @@
   }
   
   .service-card .card-title { margin-block-end: 8px; }
+
+  @media (max-width: 400px) {
+   .service-card{
+    padding: 10px;
+    gap: 20px;
+   }
+   .service-card .card-icon {
+    width: 60px;
+    
+  }
+  
+
+  }
+
+
   
 
   /*-----------------------------------*\
@@ -853,7 +868,7 @@ textarea::placeholder{
     background-image: var(--gradient);
     color: var(--white);
     font-size: 18px;
-    padding: 11px;
+    padding: 12px;
     border-radius: 50%;
   }
   

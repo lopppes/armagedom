@@ -282,10 +282,7 @@
     object-fit: cover;
   }
   
-  
-  
-  
-  
+
   /*-----------------------------------*\
     #HEDER
   \*-----------------------------------*/
@@ -382,7 +379,13 @@
    
 }
 
-/* Estilize o popup (inicialmente oculto) */
+
+
+  /*-----------------------------------*\
+    #popup
+  \*-----------------------------------*/
+  
+
 .popup {
     display: none;
     position: absolute;
@@ -416,7 +419,7 @@
     #HERO
   \*-----------------------------------*/
   
-  .hero {
+.hero {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -550,9 +553,6 @@
   
 
   }
-
-
-  
 
   /*-----------------------------------*\
     #EASE
@@ -865,8 +865,6 @@ textarea::placeholder{
 
 }
 
-  
-
   /*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
@@ -1045,7 +1043,7 @@ textarea::placeholder{
     :root {
   
       /**
-       * typography
+       * tipografia
        */
   
       --fs-1: 4.2rem;
@@ -1055,7 +1053,7 @@ textarea::placeholder{
   
   
     /**
-     * REUSED STYLE
+     * #CONTAINER
      */
   
     .container {
@@ -1066,8 +1064,7 @@ textarea::placeholder{
   
   
   
-    /**
-     * BLOG
+    /** BLOG VANTAGENS
      */
   
     .blog-card .h3 { --fs-5: 2.6rem; }
@@ -1076,10 +1073,7 @@ textarea::placeholder{
   
   }
   
-  
-  
-  
-  
+
   /**
    * responsive 768px 
    */
@@ -1096,7 +1090,7 @@ textarea::placeholder{
     :root {
   
       /**
-       * typography
+       * tipografia
        */
   
       --fs-2: 4.8rem;
@@ -1114,7 +1108,7 @@ textarea::placeholder{
   
   
     /**
-     * REUSED STYLE
+     * CONTAINER
      */
   
     .container { max-width: 750px; }
@@ -1192,7 +1186,7 @@ textarea::placeholder{
    
   
     /**
-     * BLOG
+     * BLOG VANTAGENS
      */
   
     .blog-list { grid-template-columns: 1fr 1fr; }
@@ -1216,9 +1210,7 @@ textarea::placeholder{
   
   }
   
-  
-  
-  
+
   
   /**
    * responsive 992px 
@@ -1229,7 +1221,7 @@ textarea::placeholder{
     :root {
   
       /**
-       * typography
+       * tipografia
        */
   
       --fs-2: 6rem;
@@ -1241,7 +1233,7 @@ textarea::placeholder{
   
   
     /**
-     * REUSED STYLE
+     * CONTAINER
      */
   
     .container { max-width: 980px; }
@@ -1372,7 +1364,7 @@ textarea::placeholder{
   
   
     /**
-     * BLOG
+     * BLOG VANTAGENS
      */
   
     .blog-list { grid-template-columns: repeat(3, 1fr); }
@@ -1395,14 +1387,10 @@ textarea::placeholder{
   
   @media (min-width: 1200px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
   
       /**
-       * typography
+       * tipografia
        */
   
       --fs-2: 8rem;
@@ -1414,7 +1402,7 @@ textarea::placeholder{
   
   
     /**
-     * REUSED STYLE
+     * CONTAINER
      */
   
     .container { max-width: 1180px; }

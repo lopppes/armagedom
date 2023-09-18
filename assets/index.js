@@ -67,11 +67,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Obtém o botão e o popup
+/**
+ * popup
+ */
+
 var openPopupButton = document.getElementById("openPopup");
 var popup = document.getElementById("popupContent");
 
-// Quando o botão "Ver Mais" for clicado, exibe o popup
+// quando o botão "Redes sociais" for clicado, exibe o popup
+
 openPopupButton.addEventListener("click", function () {
     if (popup.style.display === "block") {
         popup.style.display = "none";
@@ -80,7 +84,7 @@ openPopupButton.addEventListener("click", function () {
     }
 });
 
-// Fecha o popup quando o usuário clicar fora dele
+// fecha o popup quando o usuário clicar fora dele
 window.addEventListener("click", function (event) {
     if (!event.target.matches('.btn') && !event.target.matches('.popup')) {
         popup.style.display = "none";
